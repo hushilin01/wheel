@@ -5,7 +5,7 @@ var menuList = [{
 		name: '一个promise的轮子',
 		introduction1: '',
 		introduction2: '',
-		path: '',
+		path: 'javascriptt/MyPromise.html',
 		time: '2019-01-01'
 	}],
 

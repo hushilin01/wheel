@@ -16,6 +16,7 @@
 	</head>
 
 	<body>
+		<!--头部栏-->
 		<header>
 			<nav id="nav">
 				<ul class="tab" style='cursor:pointer'></ul>
@@ -23,46 +24,45 @@
 		</header>
 
 		<div id="mainbody">
+
 			<div class="info">
 				<figure>
 					<img src="img/banner.png" alt="封面图" align="middle">
 					<figcaption>
-						<strong>轮子</strong> 轮子，蒸汽机，时间机器
+						<strong>轮子</strong> 轮子
 					</figcaption>
 				</figure>
 
 			</div>
-			<!--info end-->
+
 			<div class="blank"></div>
+			<!--博客列表-->
 			<div class="blogs">
 				<ul class="bloglist">
-
 					<li>
 						<div class="arrow_box">
 							<div class="ti"></div>
-							<!--�����-->
 							<div class="ci"></div>
-							<!--Բ��-->
-							<h2 class="title"><a href="" target="">自己写的一个简单的Promise</a></h2>
+							<h2 class="title">
+								<a href="javascript/MyPromise.html" target="">自己写一个promise</a></h2>
 							<ul class="textinfo">
 								<a href="http://2976.10yanw.com/a/msh/7.html">
-									<span>MyPromise</span></a>
-								<p>自己写的一个简单的Promise
+								</a>
+								<p>根据自己粗浅的理解，写一个promise
 									</br>
 									A simple promise
 								</p>
 							</ul>
 							<ul class="details">
 								<li class="icon-time">
-									<a href="http://2976.10yanw.com/#">2000-00-00</a>
+									<a>2020-05-14</a>
 								</li>
 							</ul>
 						</div>
 						<!--arrow_box end-->
 					</li>
-
 				</ul>
-				<!--bloglist end-->
+				<!--个人的信息-->
 				<aside>
 					<div class="card">
 						<h1>MK</h1>
@@ -71,28 +71,7 @@
 						<p>
 							<a href='https://blog.csdn.net/HUSHILIN001'>CSDN:mk的csdn博客</a>
 						</p>
-
 					</div>
-					<!--<div class="viny">
-						<dl>
-							<dt class="art"><img src="./�ڻҴ�����˲�����վԴ��_DEDECMS�������Ÿ�����ҳ��վ֯��ģ��_��ҳ_files/artwork.png" alt="ר��"></dt>
-							<dd class="icon-song"><span></span>������Ӯ�����������</dd>
-							<dd class="icon-artist"><span></span>���֣�A-Lin</dd>
-							<dd class="icon-album"><span></span>����ר������A-Lin��</dd>
-							<dd class="icon-like"><span></span>
-								<a href="javascript:;">ϲ��</a>
-							</dd>
-						</dl>
-					</div>-->
-					<!--<div class="tuijian">
-						<h2>其他</h2>
-						<ol>
-							<li><span><strong>1</strong></span>
-								<a href="aita">aita</a>
-							</li>
-
-						</ol>
-					</div>-->
 
 					<div class="clicks">
 						<h2>测试</h2>
@@ -106,7 +85,7 @@
 			</div>
 
 		</div>
-
+		<!--底部-->
 		<footer>
 			<div class="footer-mid"></div>
 			<div class="footer-bottom" style="text-align: center;;">
@@ -133,9 +112,13 @@
 		menuIndex: 0, //导航栏的下标
 		num: 10, //当前展示的条数
 		pageNo: 0, //当前第几页
+		total: 0 //当前的列的总长度
 	}
 	//直接从列表里面读取数据，展示出来
 	window.addEventListener('DOMContentLoaded', function() {
-		document.querySelector('.tab').innerHTML = menuList.map(ele => `<li><a>${ele.name}</a></li>`).join('');
+		//		document.querySelector('.tab').innerHTML = menuList.map(ele => `<li><a>${ele.name}</a></li>`).join('');
+		//获取项目下的文章的长度
+		//		indexData.total = menuList[indexData.menuIndex].list.length;
+
 	});
 </script>
